@@ -4,10 +4,38 @@ import { NavLink } from 'react-router-dom';
 
 const Menu = () => {
   <nav className="menu">
-    <NavLink to="/">Home</NavLink>
-    <NavLink to="/reviews">Reviews</NavLink>
-    <NavLink to="/articles">Articles</NavLink>
-    <NavLink to="/movies/1">Movies</NavLink>
+    <NavLink
+      to="/"
+      className={({ isActive, isPending }) =>
+        isPending ? 'pending' : isActive ? 'active' : ''
+      }
+    >
+      Home
+    </NavLink>
+    <NavLink
+      to="/reviews"
+      className={({ isActive, isPending }) =>
+        isPending ? 'pending' : isActive ? 'active' : ''
+      }
+    >
+      Reviews
+    </NavLink>
+    <NavLink
+      to="/articles"
+      className={({ isActive, isPending }) =>
+        isPending ? 'pending' : isActive ? 'active' : ''
+      }
+    >
+      Articles
+    </NavLink>
+    <NavLink
+      to="/movies"
+      className={({ isActive, isPending }) =>
+        isPending ? 'pending' : isActive ? 'active' : ''
+      }
+    >
+      Movies
+    </NavLink>
   </nav>;
 };
 

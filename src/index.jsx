@@ -18,9 +18,19 @@ const App = () => {
   );
 };
 
+const ErrorPage = () => {
+  return (
+    <main>
+      <h2>404: Tady nic není</h2>
+      <p>Asi jste se spletli</p>
+    </main>
+  );
+};
+
 const router = createBrowserRouter({
   path: '/',
   element: <App />,
+  errorElemtn: <ErrorPage />,
   children: [
     { path: '/', element: <Home /> },
     { path: '/articles', element: <Articles /> },
