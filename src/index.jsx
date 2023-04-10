@@ -1,7 +1,12 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './style.css';
-import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Link,
+  Outlet,
+} from 'react-router-dom';
 import Home from './components/Home';
 import Reviews from './components/Reviews';
 import Articles from './components/Articles';
@@ -23,7 +28,7 @@ const router = createBrowserRouter({
     { path: '/', element: <Home /> },
     { path: '/articles', element: <Articles /> },
     { path: '/reviews', element: <Reviews /> },
-    { path: '/reviews', element: <Reviews /> },
+    { path: '/movies', element: <Movies /> },
   ],
 });
 
