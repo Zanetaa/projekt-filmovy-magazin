@@ -2,10 +2,11 @@ import React from 'react';
 import './style.css';
 import MovieList from '../MovieList';
 import { useParams } from 'react-router-dom';
+import movies from '../../movie-database';
 
 const Movie = () => {
   const { id } = useParams();
-  const chosenMovie = movies.find((movie) => movie[id - 1]);
+  const chosenMovie = movies.find((movie) => movie.id === id);
 
   return (
     <div className="container">
