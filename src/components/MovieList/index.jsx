@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-export const Movies = ({}) => {
+export const MovieList = ({}) => {
   return (
     <div className="container">
       <div className="movie"></div>
