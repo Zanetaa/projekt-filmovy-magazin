@@ -1,16 +1,13 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './style.css';
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Link,
-  Outlet,
-} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import Home from './components/Home';
 import Reviews from './components/Reviews';
 import Articles from './components/Articles';
 import Menu from './components/Menu';
+import Movies from './components/Movies';
+import Movie from './components/Movie';
 
 const App = () => {
   return (
@@ -28,7 +25,16 @@ const router = createBrowserRouter({
     { path: '/', element: <Home /> },
     { path: '/articles', element: <Articles /> },
     { path: '/reviews', element: <Reviews /> },
-    { path: '/movies', element: <Movies /> },
+    {
+      path: '/movies',
+      element: <Movies />,
+      children: [
+        {
+          path: '/movies/:id',
+          element: <Movie />,
+        },
+      ],
+    },
   ],
 });
 
