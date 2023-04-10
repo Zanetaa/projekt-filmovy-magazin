@@ -4,7 +4,7 @@ import './style.css';
 const Home = () => {
   return (
     <div className="container">
-      <div class="home">
+      <div className="home">
         <h1>Movie magazine</h1>
 
         <p>
