@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-export const Reviews = ({}) => {
+const Reviews = () => {
   return (
     <div className="container">
       <div className="reviews">
@@ -33,3 +33,5 @@ export const Reviews = ({}) => {
     </div>
   );
 };
+
+export default Reviews;

@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-export const Articles = ({}) => {
+const Articles = () => {
   return (
     <div className="container">
       <div class="articles">
@@ -33,3 +33,5 @@ export const Articles = ({}) => {
     </div>
   );
 };
+
+export default Articles;

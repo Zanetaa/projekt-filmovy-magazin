@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-export const Home = ({}) => {
+const Home = () => {
   return (
     <div className="container">
       <div class="home">
@@ -28,3 +28,5 @@ export const Home = ({}) => {
     </div>
   );
 };
+
+export default Home;
