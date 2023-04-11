@@ -3,3 +3,8 @@
   align-items: start;
   gap: 2rem;
 }
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+}

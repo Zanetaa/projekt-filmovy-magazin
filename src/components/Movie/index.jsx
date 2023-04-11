@@ -12,6 +12,7 @@ const Movie = () => {
     <div className="container">
       <div className="movies-container">
         <h1> {chosenMovie.title}</h1>
+        <br />
         <img src={chosenMovie.poster} />
       </div>
       <div className="movie-list">

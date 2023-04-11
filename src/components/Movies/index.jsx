@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom';
 const Movies = () => {
   return (
     <div className="container">
-      <div className="movie">
+      <div className="movies-container">
         <MovieList />
         <Outlet />
       </div>
