@@ -4,7 +4,7 @@ import './style.css';
 const Articles = () => {
   return (
     <div className="container">
-      <div class="articles">
+      <div className="articles">
         <h1>Articles</h1>
 
         <p>
