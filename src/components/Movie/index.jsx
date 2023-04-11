@@ -15,7 +15,7 @@ const Movie = () => {
         <br />
         <img src={chosenMovie.poster} />
       </div>
-      <div className="movie-list">
+      <div>
         <p>Year: {chosenMovie.year}</p>
         <p>Rating: {chosenMovie.rating}</p>
         <p>Director: {chosenMovie.director}</p>
